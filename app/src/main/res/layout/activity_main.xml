@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:text="CHI HAJA"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"
+        android:inputType="number"
+        tools:ignore="LabelFor" />
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        tools:ignore="LabelFor" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_add"
+            android:text="@string/add"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_update"
+            android:text="@string/update"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="@string/delete"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_midden"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
